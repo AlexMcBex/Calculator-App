@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
-  
+
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
+  <main class="calc-body">
+    <div class="cal-header-container">
+      <div class="logo-container">
+        <h1 class="logo">CALC</h1>
+      </div>
+      <div class="theme-toggle-container">
+        <p class="theme-toggle-number">1</p>
+        <p class="theme-toggle-number">2</p>
+        <p class="theme-toggle-number">3</p>
+        <div class="theme-toggle-body">
+          <div class="theme-toggle-line">
+            <div class="theme-switch"></div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-text-container">
+        <p class="theme-text">Theme</p>
+      </div>
+    </div>
 
-  
+    <div class="screen-container">
+      <input type="text" aria-label="Screen" value="" class="screen">
+      <div class="screen-guard"></div>
+    </div>
+
+    <div class="calc-body">
+      <div class="calc-buttons-container">
+        <button data-key="7" class="calculator-btn num-key white-btn">7</button>
+        <button data-key="8" class="calculator-btn num-key white-btn">8</button>
+        <button data-key="9" class="calculator-btn num-key white-btn">9</button>
+        <button data-delete class="calculator-btn del-key blue-btn">DEL</button>
+        <button data-key="4" class="calculator-btn num-key white-btn">4</button>
+        <button data-key="5" class="calculator-btn num-key white-btn">5</button>
+        <button data-key="6" class="calculator-btn num-key white-btn">6</button>
+        <button data-plus class="calculator-btn white-btn">+</button>
+        <button data-key="1" class="calculator-btn num-key white-btn">1</button>
+        <button data-key="2" class="calculator-btn num-key white-btn">2</button>
+        <button data-key="3" class="calculator-btn num-key white-btn">3</button>
+        <button data-minus class="calculator-btn white-btn">-</button>
+        <button data-key class="calculator-btn white-btn">.</button>
+        <button data-key="0" class="calculator-btn num-key white-btn">0</button>
+        <button data-divide class="calculator-btn white-btn">/</button>
+        <button data-multiply value="*" class="calculator-btn white-btn">x</button>
+        <button data-reset class="calculator-btn blue-btn">RESET</button>
+        <button data-equal class="calculator-btn red-btn">=</button>
+      </div>
+    </div>
+  </main>
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/AlexMcBex">Alessio -Alex- Belli</a>.
   </div>
+  <footer>
   <script src="./js/app.js"></script>
+</footer>
 </body>
+
 </html>
