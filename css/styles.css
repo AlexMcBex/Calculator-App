@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    background-color: 
+    hsl(222, 26%, 31%);
+    font-family: "League Spartan", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calc-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    float: left;
+}
+#logo{ 
+    color: white;
+    margin: 0;
+}
+
+.theme-toggle-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: white;
+}
+
+#theme-text
+
+input{
+    background-color: hsl(224, 36%, 15%);
+    color: #e6e8ea;
+    font-size: 32px;
+}
+
+.calc-body{
+   background-color:  hsl(223, 31%, 20%);
+}
+
+.calculator-btn{
+    font-size: 20px;
+}
+
+.white-btn{
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+}
+.blue-btn{
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+}
+.red-btn{
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+}
