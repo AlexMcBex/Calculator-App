@@ -34,7 +34,15 @@ body{
     color: white;
 }
 
-#theme-text
+#theme-text{
+    color: white;
+}
+.theme-text-container{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    float: right;
+}
 
 input{
     background-color: hsl(224, 36%, 15%);
@@ -44,15 +52,37 @@ input{
 
 .calc-body{
    background-color:  hsl(223, 31%, 20%);
+   display:flex;
+   justify-content: center;
+}
+.calc-buttons-container{
+    display: grid;
+    grid-template-columns: repeat(4, 101px);
+    grid-template-rows: repeat(5, 58px);
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .calculator-btn{
-    font-size: 20px;
+    height: 58px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    position:relative;
+    
 }
 
 .white-btn{
     background-color: hsl(30, 25%, 89%);
     color: hsl(221, 14%, 31%);
+    font-size: 33px;
+    box-shadow: 0 5px 1px 
+    #b7a79b;
+}
+.white-btn active{
+    top: 3px;
+    box-shadow: 0 2px 1px 
+    #b7a79b;
 }
 .blue-btn{
     background-color: hsl(225, 21%, 49%);
