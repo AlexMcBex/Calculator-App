@@ -70,7 +70,7 @@ const inputOp = (key) =>{
     console.log(inputValue)
 }
 //dot key
-dotKey.onClick= () =>{
+dotKey.onclick= () =>{
     inputOp(dotKey)
 }
 //operations keys
