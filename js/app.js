@@ -14,7 +14,7 @@
 
 /////DEFINE VARIABLES////////////
 //calc text box
-const screen = document.querySelector(".screen")
+const screen = document.querySelector("#screen-input")
 //calc keys
 //numkeys
 const numKeys = document.querySelectorAll("[data-key]")

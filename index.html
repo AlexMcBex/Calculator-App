@@ -8,8 +8,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 
-  <title>Calculator app | Frontend Mentor | </title>
+  <title>Alex's Calculator app | Frontend Mentor | </title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -46,9 +49,9 @@
       </div>
     </div>
 
-    <div class="screen-container">
-      <input type="text" aria-label="Screen" value="" class="screen">
-      <div class="screen-guard"></div>
+    <div id="screen-container">
+      <input type="text" aria-label="Screen" value="" id="screen-input">
+      <div id="screen-guard"></div>
     </div>
 
     <div class="calc-body">
@@ -75,12 +78,13 @@
     </div>
     </div>
   </main>
-
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/AlexMcBex">Alessio -Alex- Belli</a>.
   </footer>
+
+
   <script src="./js/app.js"></script>
 </body>
 
