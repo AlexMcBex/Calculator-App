@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
+*{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+}
+
 body{
     background-color: 
     hsl(222, 26%, 31%);
@@ -15,37 +20,92 @@ body{
 }
 
 .calc-container{
+    width: 90%;
+    background-color: none;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 /* HEADER */
+.calc-header-container{
+    width: 520px;
+    height: max-content;
+    margin-bottom: 25px;
+}
 .logo-container{
     float: left;
 }
 #logo{ 
     color: white;
     margin: 0;
+    font-size: 32px;
+    
 }
 
 .theme-toggle-container{
+    width: 70px;
+    height: 38px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     float: right;
     color: white;
 }
-
-#theme-text{
-    color: white;
+.theme-toggle-numbers-container{
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.theme-toggle-number{
+    font-size: 15px;
+    margin: 0;
+}
+.theme-toggle-body{
+    width: 100%;
+    height: 28px;
+    border-radius: 24px;
+    background-color: hsl(223, 31%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme-toggle-line{
+    width: 85%;
+    height: 19px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.theme-switch{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+    position:relative;
+
+}
+
 .theme-text-container{
     width: max-content;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
     float: right;
 }
+#theme-text{
+    font-size: 14px;
+    color: white;
+    /* margin: 0; */
+}
+
+
 
 /* SCREEN */
 #screen-container{
