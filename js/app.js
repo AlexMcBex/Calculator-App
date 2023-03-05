@@ -46,10 +46,12 @@ numKeys.forEach(i => {
         // console.log(e.target.textContent)
         // console.log(i)
         // console.log(Number(screen.value))
-        if (Number(screen.value) === 0 && Number(i.textContent) > 0) {
+        if (Number(screen.value) === 0 && Number(i.textContent) > 0 && screen.value.length < 1) {
             screen.value = i.textContent
+            screen.value = screen.value.toLocaleString("en-US")
         } else {
             screen.value += i.textContent
+            screen.value = screen.value.toLocaleString("en-US")
         }
         inputValue.push(i.textContent)
         console.log(inputValue)
@@ -105,9 +107,9 @@ delKey.onclick = () =>{
     //push result in screen.value
     //pass result in inputvalue for next operation
     equalKey.onclick = () =>{
-        screen.value = eval(inputValue.join(""))
+        screen.value = eval(inputValue.join("")).toLocaleString("en-US")
         inputValue= []
-        inputValue.push(screen.value)
+        inputValue.push(Number(screen.value.replaceAll(',', '')))
         console.log(inputValue)
     }
 
